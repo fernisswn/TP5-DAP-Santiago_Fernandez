@@ -69,8 +69,7 @@ class FirebaseSetupScreen extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(Icons.electrical_services_rounded,
-                    size: 54, color: Theme.of(context).colorScheme.primary),
+                const Text('🔌', style: TextStyle(fontSize: 54)),
                 const SizedBox(height: 20),
                 Text(
                   'Falta conectar Firebase',

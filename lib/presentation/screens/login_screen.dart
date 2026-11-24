@@ -43,7 +43,6 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     final busy = ref.watch(authControllerProvider).isLoading;
-    final colorScheme = Theme.of(context).colorScheme;
 
     return Scaffold(
       body: SafeArea(
@@ -57,8 +56,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Icon(Icons.electrical_services_rounded,
-                        size: 54, color: colorScheme.primary),
+                    const Text('🔌', style: TextStyle(fontSize: 54)),
                     const SizedBox(height: 18),
                     Text('ElectroVault',
                         textAlign: TextAlign.center,
